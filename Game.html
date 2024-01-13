@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logics Game.</title>
+    <link rel="stylesheet" href="Game.css" />
+    <script src="Game.js" defer></script>
+  </head>
+  <body onload="init()">
+    <main>
+      <div class="homeScreen" id="homeScreen">
+        <h2>Guess the random number between 1 to 100.</h2>
+        <img src="search.jpg" alt="" width="200vw" height="230vw" />
+        <section class="gameEvent">
+          <p>Select Difficult</p>
+          <div class="buttom-warpper">
+            <button class="btn" id="btn" onclick="easyGame()">
+              Easy: 10 attempt
+            </button>
+            <!-- <button class="btn" id="btn" onclick="hardGame()">
+              Hard: 5 attempts
+            </button> -->
+          </div>
+        </section>
+      </div>
+      <div class="gameArea" id="gameArea">
+        <div class="newGamrButton" id="newGamrButton">
+          <button class="btn" id="nweGameBegining">New Game</button>
+        </div>
+        <section>
+          <h3 id="yourGuess">Your Guess.</h3>
+          <input
+            class="inp"
+            type="number"
+            id="inputBox"
+            min="1"
+            max="100"
+            placeholder="Enter your number"
+            onchange="myFunction()"
+          />
+        </section>
+        <section>
+          <div class="info">
+            <p>Number of previous attempts</p>
+            <span id="attampts">0</span>
+          </div>
+          <div class="info">
+            <p>Number of previous attempt</p>
+            <span id="guess">0</span>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

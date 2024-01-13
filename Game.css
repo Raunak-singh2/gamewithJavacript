@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: rgba(165, 219, 165, 0.852);
+  background:linear-gradient(to left rgba(darkgreen,aliceblue,orange,lightblue));
+}
+main {
+  width: 40vw;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background:linear-gradient(to bottom rgba(darkgreen,aliceblue,orange,lightblue));
+}
+h2 {
+  margin-top: 10px;
+}
+h3 {
+  padding: 0.8rem;
+}
+
+img {
+  width: 90%;
+  border-radius: 0.2rem;
+  object-fit: cover;
+  cursor: pointer;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+}
+p {
+  font-size: 1.3rem;
+  padding: 0.6rem;
+}
+.buttom-warpper {
+  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttom-warpper button {
+  margin-top: 0.7rem;
+  padding: 0.6rem 2rem;
+  background-color: darkgreen;
+  color: aliceblue;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.buttom-warpper button:hover {
+  background-color: rgba(3, 255, 3, 0.858);
+  color: aliceblue;
+}
+.gameArea {
+  padding: 10px;
+}
+.btn {
+  margin-top: 0.7rem;
+  padding: 0.6rem 2.5rem;
+  background-color: darkgreen;
+  color: aliceblue;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+}
+.btn:hover {
+  background-color: rgba(3, 255, 3, 0.858);
+  color: aliceblue;
+}
+.inp {
+  padding: 0.5rem 2rem;
+}
+span {
+  color: red;
+  text-align: right;
+}
+.inp {
+  text-align: left;
+}
+.gameArea {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  /* display: none; */
+}
+/* .homeScreen{
+  display: none; 
+
+} */
+.info {
+  text-align: center;
+  margin-top: 1rem;
+}
+@media only screen and (max-width: 650px) {
+  main {
+    width: 100%;
+    margin: 1rem;
+  }
+}
